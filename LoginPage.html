@@ -3,12 +3,12 @@
 <head>
 <link href='//fonts.googleapis.com/css?family=Overlock SC' rel='stylesheet'>
 <title> Login Page </title>
-<style> 
+<style>
 body{
     font-family: 'Overlock SC';font-size: 22px;
 }
 input[type=text]{
-    border: 1px solid black;
+	border: 1px solid black;
     border-radius: 3px;
     padding: 8px;
 }
@@ -16,21 +16,28 @@ input[type=submit]{
 	padding:5px 15px;
     border: 1px solid black;
     border-radius: 2px;
-    background: #ccc;   
+    background: #58cc;   
 }
 </style>
 </head>
 <body background = "https://www.ecotourismgc.com/wp-content/uploads/2015/09/background.jpg">
- <h1>
-  <center>
-   <font face="Overlock SC" color="black">
-     Enter Your Information
-   </font>
-  </center> 
- </h1>
+ <h1> <center> <font face="Overlock SC" color="black"> </font> Enter Your Information </center> </h1>
  
  <form action = "login.php" method = "post">
- <table width = "200" border = "0">
+ <table width = "200" border = "0">	 
+ <?php
+ session_start();
+ if($_SESSION["log"])
+ {
+ 	print_content();
+    }
+ else{
+ if(!$_SESSION["not logged"])
+ {
+ 	$_SESSION["not logged"]) = true;
+    login();
+    }
+ ?>
  <tr>
  	<center> Username:
  	</center>
@@ -53,3 +60,4 @@ input[type=submit]{
  </form>
  </body>
  </html>
+
