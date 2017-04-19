@@ -14,3 +14,5 @@ Feature 3: Map Location
 	The user will enter a location where they have a dog. The program should throw an error message if an invalid location was entered, an invalid location being a location not in Boulder.
 
 Automated Tests:
+Unit test automated testing tool
+https://phpunit.de/
