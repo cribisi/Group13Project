@@ -22,3 +22,4 @@ Instructions for running:
 3. make sure you have phpunit installed by following the instructions on the website 
 4. run command: phpunit DogMapTest.php, for the DogMap.php unit test
 5. the output should be two "." and also some messages saying that there are undefined indexes Latitude and Longitude, but those are just for getting the Longitude and Latitude from an html form.
+https://docs.google.com/a/colorado.edu/document/d/1u9YI02F_qOGA4KoTkCapM9oz4z80oQaty4TSO-tyIfk/edit?usp=sharing
